@@ -7,7 +7,7 @@
 
 > **⚠️ 声明：**
 > 本项目为商业化落地的独立单机版财务软件（已进行版权保护与软著申请），此处仅作为 **Showcase（展示库）** 公开核心架构设计、业务逻辑处理方案以及部分非涉密代码片段。完整闭源系统暂不提供直接下载。
-👉 [点击此处直达阅读或下载：《小微企业财务系统 V1.0 核心源码与开发文档.pdf》](https://github.com/a18934171598-svg/Qt-Enterprise-Accounting-System/raw/main/Finance-System-Doc.pdf
+👉 [点击此处直达阅读或下载：《小微企业财务系统 V1.0 用户手册.pdf》](https://github.com/a18934171598-svg/Qt-Enterprise-Accounting-System/raw/main/Finance-System-Doc.pdf
 ---
 
 ## 📖 项目简介

@@ -41,25 +41,28 @@
 
 ### 1. 智能凭证录入与现金流追踪
 
-> ![image-20261107220610228](C:\Users\13829\AppData\Roaming\Typora\typora-user-images\image-20261107220610228.png)
+<img width="606" height="910" alt="image" src="https://github.com/user-attachments/assets/8c46f312-2f66-4c72-86ac-661acaa311ac" />
+
 *   **智能拦截：** 多级验证必填项、借贷必须平衡方可入库。
 *   **现金流自动感知：** 核心逻辑会自动判断科目是否触碰“资金池”（1001现金/1002银行存款）。如果是单边资金变动，强制阻塞弹窗，要求出纳指定现金流向（经营/投资/筹资），确保生成的现金流量表绝对准确。
 
 ### 2. 试算平衡与期初建账 (Trial Balance)
 
-> ![image-20261107220246142](C:\Users\13829\AppData\Roaming\Typora\typora-user-images\image-20261107220246142.png)
+<img width="1585" height="997" alt="image" src="https://github.com/user-attachments/assets/fa036808-7e50-4745-935d-71f29989068e" />
+
 >
 > *   支持自下而上的树状科目锁定，包含下级科目的父节点自动变灰且禁止录入。
 > *   严格执行“借贷必等”的铁律，差一分钱系统都会拒绝建账锁定。
 
 ### 3. 月末结账与沙盒管理
-> ![image-20261107220517403](C:\Users\13829\AppData\Roaming\Typora\typora-user-images\image-20261107220517403.png)
+<img width="1519" height="667" alt="image" src="https://github.com/user-attachments/assets/6d3a6a77-5ede-4b04-85ea-5bcec4239549" />
+
 *   利用 SQLite 单表双锚点时间机器记录系统状态。
 *   支持严格的逐月封账与反结账操作，封账后的月份进入只读沙盒模式，所有凭证不可修改、不可删除，保障审计留痕。
 
 ---
 
-## 🛠 代码片段鉴赏 (Code Snippets)
+## 🛠 代码片段 (Code Snippets)
 
 由于商业机密，此处仅展示部分非核心业务逻辑但能体现工程化思维的基础代码：
 
